@@ -850,6 +850,7 @@
 				93FED9C11A376EFE009A6E9F /* Resources */,
 				802528B749910E5695D54FCF /* [CP] Embed Pods Frameworks */,
 				9262A8AE27720DE6009441A3 /* Embed Frameworks */,
+				34C9CD552850C3A100FB5451 /* Sign Embedded OMSDK_Prebidorg.framework */,
 				2604B52EFD0A1C8698F645F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -1052,6 +1053,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InternalTestApp/Pods-InternalTestApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		34C9CD552850C3A100FB5451 /* Sign Embedded OMSDK_Prebidorg.framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Sign Embedded OMSDK_Prebidorg.framework";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "pushd ${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/Frameworks/PrebidMobile.framework/Frameworks\nfor EACH in *.framework; do\n    echo \"-- signing ${EACH}\"\n    /usr/bin/codesign --force --deep --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" --entitlements \"${TARGET_TEMP_DIR}/${PRODUCT_NAME}.app.xcent\" --timestamp=none $EACH\ndone\npopd\n";
 		};
 		484200C8E7CBBACB19DC5AB3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

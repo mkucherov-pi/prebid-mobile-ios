@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34C9CD5F2850CE6300FB5451 /* OMSDKVersionProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 34C9CD5D2850CE6300FB5451 /* OMSDKVersionProvider.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		34C9CD602850CE6300FB5451 /* OMSDKVersionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C9CD5E2850CE6300FB5451 /* OMSDKVersionProvider.m */; };
 		38F03B272576421400E026A2 /* CacheManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F03B262576421400E026A2 /* CacheManagerTests.swift */; };
 		38F03B332576624C00E026A2 /* TrackerManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F03B322576624C00E026A2 /* TrackerManagerTests.swift */; };
 		47D9A008EA5B9DF894E98CA2 /* ACJRefreshTest_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 47D9AF9402144C399D6D4A1C /* ACJRefreshTest_0.json */; };
@@ -836,6 +838,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		34C9CD5D2850CE6300FB5451 /* OMSDKVersionProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMSDKVersionProvider.h; sourceTree = "<group>"; };
+		34C9CD5E2850CE6300FB5451 /* OMSDKVersionProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMSDKVersionProvider.m; sourceTree = "<group>"; };
 		38F03B262576421400E026A2 /* CacheManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManagerTests.swift; sourceTree = "<group>"; };
 		38F03B322576624C00E026A2 /* TrackerManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerManagerTests.swift; sourceTree = "<group>"; };
 		47D9A0396ABC8830B365D7DD /* MockLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLocationManager.swift; sourceTree = "<group>"; };
@@ -1818,6 +1822,8 @@
 			children = (
 				FAEE4CE1262DC2B200AD9966 /* CollectionExtension.swift */,
 				929865382806CCC3007A2F34 /* UIView+Extensions.swift */,
+				34C9CD5D2850CE6300FB5451 /* OMSDKVersionProvider.h */,
+				34C9CD5E2850CE6300FB5451 /* OMSDKVersionProvider.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -3313,6 +3319,7 @@
 				5BC37922271F1CFF00444D5E /* PBMUserConsentResolver.h in Headers */,
 				5BC37AD2271F1D0100444D5E /* PBMNetworkParameterBuilder.h in Headers */,
 				5BC37ADF271F1D0100444D5E /* WKNavigationAction+PBMWKNavigationActionCompatible.h in Headers */,
+				34C9CD5F2850CE6300FB5451 /* OMSDKVersionProvider.h in Headers */,
 				5BC37A7F271F1D0000444D5E /* PBMBidRequester.h in Headers */,
 				5BC37999271F1D0000444D5E /* PBMMRAIDJavascriptCommands.h in Headers */,
 				5BC379AE271F1D0000444D5E /* PBMAdRequestResponseVAST.h in Headers */,
@@ -3982,6 +3989,7 @@
 				5BC378FF271F1CFF00444D5E /* PBMORTBImpExtPrebid.m in Sources */,
 				5BC37A8F271F1D0000444D5E /* BaseInterstitialAdUnit.swift in Sources */,
 				5BC37A14271F1D0000444D5E /* PBMError_Extension.swift in Sources */,
+				34C9CD602850CE6300FB5451 /* OMSDKVersionProvider.m in Sources */,
 				5BC378B3271F1CFF00444D5E /* NSException+PBMExtensions.m in Sources */,
 				5BC379DF271F1D0000444D5E /* DisplayViewLoadingDelegate.swift in Sources */,
 				5BC379C4271F1D0000444D5E /* PBMClickthroughBrowserNavigationHandler.m in Sources */,
