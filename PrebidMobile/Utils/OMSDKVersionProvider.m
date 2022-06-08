@@ -7,7 +7,7 @@
 //
 
 #import "OMSDKVersionProvider.h"
-@import OMSDK_Prebidorg;
+#import <OMIDSDK.h>
 
 @implementation OMSDKVersionProvider
 
